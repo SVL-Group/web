@@ -4,6 +4,9 @@
       <base target="_top">
    </head>
    <body>
-      <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;border: 0;" src="https://script.google.com/macros/s/AKfycbzOFX1tAgE_pcI7GKo6YXV8KCeI-0dC7QMyw_4V__F6jvLSMZdH2ytuY0vZQ7oIaV-I/exec?openExternalBrowser=1"></iframe>
+      <script>
+         var userId = (new URLSearchParams(window.location.search)).get("q");
+      </script>
+      <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;border: 0;" src="https://script.google.com/macros/s/AKfycbxIYEpI_ideO2qW6LSQS1ub7KBeWCRW8O4axIY0Q4NkExhZ8s6gNf1mqFv8ie-aU810/exec?q=${userId}"></iframe>
    </body>
 </html>
